@@ -1,6 +1,6 @@
 # Password Authenticator
 
-Storage the username and MD5 hash of password in a text file, and authenticate it.
+Store the username and MD5 hash of password in a text file, and authenticate them.
 
 To build:
 ```shell
