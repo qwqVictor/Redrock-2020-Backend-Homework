@@ -42,7 +42,7 @@ func main() {
 			var ok bool
 			if err == nil {
 				ok = (userinfo[0] == username && bytes.Equal(passhash, md5sum(password)))
-				fmt.Fprintf(os.Stderr, "Data : %s %s\nInput: %s %s\n", userinfo[0], userinfo[1], username, hex.EncodeToString(md5sum(password)))
+				// fmt.Fprintf(os.Stderr, "Data : %s %s\nInput: %s %s\n", userinfo[0], userinfo[1], username, hex.EncodeToString(md5sum(password)))
 			} else {
 				ok = false
 			}
