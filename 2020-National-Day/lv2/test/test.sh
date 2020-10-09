@@ -9,7 +9,7 @@ if [ ! -f "main" ]; then
     make || exit 1
 fi
 
-printf "%s\n%s\n" ${USERNAME} ${PASSHASH} > ${DB_FILENAME}
+printf "%s %s\n" ${USERNAME} ${PASSHASH} > ${DB_FILENAME}
 
 printf "%s\n%s\n" ${USERNAME} ${PASSWORD} | ./main ${DB_FILENAME} 2> /dev/null
 
